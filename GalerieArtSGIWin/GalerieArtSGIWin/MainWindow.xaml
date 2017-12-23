@@ -1,0 +1,29 @@
+﻿<Window x:Class="GalerieArtSGIWin.MainWindow" 
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GalerieArtSGIWin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\ali\Documents\visual studio 2015\Projects\GalerieArtSGIWin\GalerieArtSGIWin\Form1.jpeg"/>
+        </Grid.Background>
+
+
+        <PasswordBox PasswordChar="*" x:Name="Motdepasse" PasswordChanged="Motdepasse_PasswordChanged"  HorizontalAlignment="Left" Height="23" Margin="220,231,0,0"  VerticalAlignment="Top" Width="260" >
+            
+            <AutomationProperties.LabeledBy>
+                <PasswordBox/>
+            </AutomationProperties.LabeledBy>
+        </PasswordBox>
+        <TextBox x:Name="Nom" HorizontalAlignment="Left" Height="23" Margin="220,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" TextChanged="Nom_TextChanged"/>
+        <TextBlock x:Name="textBlock" Foreground="Beige" HorizontalAlignment="Left" Margin="21,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"><Run Text="Nom D'accée"/><Run Text="s :"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy" Foreground="Beige"  HorizontalAlignment="Left" Margin="21,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Text="Mot De Passe:"/>
+        <TextBlock x:Name="textBlock_Copy1" Foreground="Beige" FontSize="30" HorizontalAlignment="Left" Margin="158,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Height="135"><Run Text="Bienvenue"/><LineBreak/><Run Text="a la Galerie d'art "/><Run Text="  "/><Run Text="SGI"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="OK" Content="OK" HorizontalAlignment="Left" Margin="220,288,0,0" VerticalAlignment="Top" Width="75" Click="OK_Click"/>
+        <Button x:Name="Quitter" Content="Quitter" HorizontalAlignment="Left" Margin="405,288,0,0" VerticalAlignment="Top" Width="75" Click="Quitter_Click"/>
+    </Grid>
+</Window>

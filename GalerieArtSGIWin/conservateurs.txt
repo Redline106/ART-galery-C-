@@ -1,0 +1,4 @@
+a a
+id cons=a commsion totale=0
+b b
+id cons=b commsion totale=0
